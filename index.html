@@ -1,0 +1,13 @@
+---
+layout: default
+title: Ryun
+---
+<ul class="posts">
+    {% for post in site.posts %}
+    <li>
+        
+        <a class="post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p class="date">{{ post.date | date: "%y.%m.%d" }}</p> 
+    </li>
+    {% endfor %}
+</ul>

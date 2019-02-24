@@ -1,0 +1,160 @@
+---
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: 'Noto Serif KR', sans-serif;
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    color: #222;
+    margin: auto;
+    font-family: $base-font-family;
+    
+    @media (max-width: 375px) {
+        padding: 1rem;   
+    }
+    
+    @media not all and (max-width: 375px){
+        padding: 3rem;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            color: rgb(221, 113, 24);
+        }
+    }
+
+    header {
+
+        width: 4rem;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    section {
+
+        ul.posts {
+            margin: auto;
+            font-size: 1.4rem;
+            list-style-type: none;
+            padding-left: 0;
+            
+            li {
+                padding: 2rem;
+                text-align: center;
+                
+                .date {
+                    color: rgb(145, 145, 145);
+                    margin: auto;
+                    position: relative;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        
+        article {
+            text-align: justify;
+            word-break: break-word;
+            font-size: 0.95rem;
+            
+            a {
+                color: rgb(221, 113, 24);
+            }
+
+            p {
+                line-height: 1.7rem;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 60rem;
+
+                &.single {
+                    max-width: 100rem;
+                    @media (max-width: 500x) {
+                        margin: 1rem auto;   
+                    }
+
+                    @media not all and (max-width: 500px){
+                        margin: 6rem auto;
+                    }
+                }
+            }
+
+            h1 {
+                max-width: 60rem;
+                text-align: center;
+                word-break: break-word;
+                margin: 1em auto 0 auto;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+            
+            .date {
+                margin: 0 auto;
+                font-size: 0.8rem;
+                text-align: center;
+                color: rgb(145, 145, 145);
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+
+
+            blockquote {
+                font-size: 1.1rem;
+                color: rgb(116, 116, 116);
+                margin: 3rem auto;
+                padding: 0 1rem;
+                text-align: center;
+            }
+    
+            
+        }
+        
+    }
+
+    hr {
+        width: 8rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: right;
+        position: relative;
+        border: 0.5px solid rgb(160, 160, 160);
+        
+        &.left {
+            margin-left: 0;
+        }
+
+        &.title {
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+            border: 0.5px solid rgb(221, 113, 24);
+        }
+
+        
+    }
+    
+    .footnotes {
+        margin: 4rem auto;
+        max-width: 60rem;
+        color: rgb(116, 116, 116);
+
+        &::before {
+            content: "";
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            position: relative;
+            border: 0.5px solid rgb(160, 160, 160);
+        }
+
+    }
+}
