@@ -4,5 +4,3 @@ hide_body: false
 is_partial: true
 fields:
 - type: include
-pages:
-- _posts/test.md
