@@ -3,11 +3,16 @@ label: Post
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: layout
-  label: Layout
+- type: select
   config:
-    required: true
+    source:
+      type: simple
+      section: jekyll-posts
+      file: _posts/2019-02-24-start.markdown
+    options:
+    - post
+  label: Layout
+  name: layout
 - type: text
   name: author
   label: Author
