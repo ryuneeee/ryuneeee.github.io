@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: css
-  label: Stylesheets
-  create: all
-  match: "**/*"
 - type: jekyll-posts
   label: Posts
   create: all
@@ -18,6 +13,11 @@ sections:
 - type: directory
   path: _layouts
   label: Layouts
+  create: all
+  match: "**/*"
+- type: directory
+  path: css
+  label: Stylesheets
   create: all
   match: "**/*"
 upload_dir: uploads
