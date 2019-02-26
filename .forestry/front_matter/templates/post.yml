@@ -13,6 +13,7 @@ fields:
     - post
   label: Layout
   name: layout
+  default: post
 - type: text
   name: author
   label: Author
