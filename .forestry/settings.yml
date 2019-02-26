@@ -4,8 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: sdf
+- type: directory
+  path: css
+  label: css
+  create: all
 - type: jekyll-posts
   label: Posts
   create: all
