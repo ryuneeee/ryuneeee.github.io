@@ -5,7 +5,7 @@ date: 2019-01-30 15:00:00 +0000
 title: CMS vs SSG
 
 ---
-!\[\]([https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW](https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW "https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW")  
+![]([https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW](https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW "https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW")  
 {: class="single"}
 
 어렸을때 부터 나는 CMS라는 용어를 모르고 있었을 뿐, 계속 쓰고 있었다. 대표적인게 WordPress인데, 이 블로그에 들어오는 유저라면 따로 설명하지 않아도 아마 매우 잘 알 것이라고 생각한다. 국내에는 예전부터 쭉 이어오던 Tistory가 대표적이고, 플랫폼으로 넓혀가는 과정에서 카카오의 브런치, Medium 등 다들 한 번 쯤은 사용하지 않았을까 생각된다. CMS는 블로깅 툴과 컨텐츠를 보여주기 위한 툴이라고 생각하면 본질적으로 같지만, 사실 CMS와 블로깅 툴은 조금 다르다. CMS는 컨텐츠를 블로그로 한정하지 않고 대부분의 미디어를 범주로 둔다.
