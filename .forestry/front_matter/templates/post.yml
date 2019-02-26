@@ -1,0 +1,29 @@
+---
+label: Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  config:
+    required: true
+- type: text
+  name: author
+  label: Author
+  config:
+    required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: false
+    required: true
+    time_format: hh:mm ZZ
+  name: date
+  label: Date
+  default: 2019-01-30 15:00:00 +0000
