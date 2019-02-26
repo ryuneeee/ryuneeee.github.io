@@ -18,6 +18,7 @@ fields:
   label: Author
   config:
     required: true
+  default: Ryunhee Han
 - type: text
   name: title
   label: Title
