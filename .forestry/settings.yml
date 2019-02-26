@@ -5,10 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: _css
+  path: css
   label: Stylesheets
   create: all
-  match: "**/*"
+  match: "*.scss"
 - type: jekyll-posts
   label: Posts
   create: all
