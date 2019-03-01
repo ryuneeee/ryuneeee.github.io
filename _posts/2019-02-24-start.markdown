@@ -4,8 +4,8 @@ author: Ryunhee Han
 title:  "토이 프로젝트"
 date:   2019-02-24 13:30:00 +0900
 ---
-![](https://drive.google.com/uc?id=1Ab8-23JwPFsyHtDuQ9DTQx5RlwGgOfwW)
-{: class="single"}
+![](https://farm8.staticflickr.com/7893/46336678305_18f716d569_o.jpg)
+{: class="wide"}
 
 ***토이 프로젝트[^1]도 만들다 보면 항상 고민이 많다.***
 

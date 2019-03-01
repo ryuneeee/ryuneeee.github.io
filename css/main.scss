@@ -4,24 +4,28 @@
 
 // Our variables
 $base-font-family: 'Noto Serif KR', sans-serif;
+$content-width: 60rem;
 
 html {
     padding: 0;
     margin: 0;
+    // -webkit-text-size-adjust: 100%;
+    line-height: 1.7rem;
+
+    @media (min-width: 1500px) {
+        line-height: 1.9rem;
+    }
 }
 
+body::-webkit-scrollbar { display: none; }
+
 body { 
-    color: #222;
+    color: #333;
     margin: auto;
     font-family: $base-font-family;
-    
-    @media (max-width: 375px) {
-        padding: 1rem;   
-    }
-    
-    @media not all and (max-width: 375px){
-        padding: 3rem;
-    }
+    -ms-overflow-style: none;
+    overflow: auto;
+    padding-bottom: 4rem;
 
     a {
         color: #000;
@@ -32,16 +36,36 @@ body {
     }
 
     header {
-
-        width: 4rem;
-        font-size: 1.5rem;
+        text-align: center;
+        background: #FFF;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        height: 2rem;
+        font-size: 1.2rem;
         margin: auto;
+        border-bottom: solid 1px #EEE;
+        z-index: 10;
+
+        .progress-container {
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 1;
+            width: calc(100% + 3rem);
+            
+            #reading-scroll {
+                height: 2px;
+                background: #fa2d5a;
+                width: 0%;
+            }
+        }
     }
 
     section {
 
         ul.posts {
-            margin: auto;
+            margin: 5rem auto;
             font-size: 1.4rem;
             list-style-type: none;
             padding-left: 0;
@@ -62,61 +86,179 @@ body {
         article {
             text-align: justify;
             word-break: break-word;
-            font-size: 0.95rem;
-            
+            margin-right: auto;
+            margin-left: auto;
+
+
             a {
                 color: rgb(221, 113, 24);
             }
 
-            p {
-                line-height: 1.7rem;
-                margin-right: auto;
-                margin-left: auto;
-                max-width: 60rem;
+            h1 {
+                font-size: 1.8rem;
+            }
 
-                &.single {
-                    max-width: 100rem;
-                    @media (max-width: 500x) {
-                        margin: 1rem auto;   
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            h6 {
+                font-size: 1rem;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                margin-top: 6rem;
+                text-align: initial;
+            }
+            
+            ol {
+                li {
+                    margin: 0 2rem;
+                }
+            }
+
+            p, ol, h1, h2, h3, h4, h5, h6, table {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: $content-width;
+
+                @media (max-width: 400px) {
+                    padding-left: 1.5rem;  
+                    padding-right: 1.5rem;  
+                }
+
+                @media (min-width: 400px) and (max-width: 800px) {
+                    padding-left: 2rem;  
+                    padding-right: 2rem;  
+                }
+                
+                @media not all and (max-width: 800px){
+                    padding-left: 3rem;  
+                    padding-right: 3rem;  
+                }
+
+                img {
+                    margin: 4rem auto;
+                    width: 100%;
+
+
+                    @media (max-width: 800px) {
+                        padding-left: 0;  
+                        padding-right: 0;  
+
+                        width: 100vw;
+                        position: relative;
+                        left: 50%;
+                        right: 50%;
+                        margin: 2rem -50vw;
                     }
 
-                    @media not all and (max-width: 500px){
-                        margin: 6rem auto;
+                }
+    
+                &.full {
+                    padding-left: 0;
+                    padding-right: 0;
+                    max-width: 100%;
+                }
+
+                &.wide {
+                    padding-left: 0;
+                    padding-right: 0;
+                    max-width: 90%;
+                    @media (max-width: 800px) {
+                        max-width: 100%;
+                    }
+                }
+
+                &.medium {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                &.small {
+                    max-width: 40rem;
+                }
+
+                &.tiny {
+                    text-align: center;
+                    img {
+                        max-width: 15rem;
+                        margin: 2rem;
+                        @media (max-width: 800px) {
+                            margin: 2rem auto;
+                            padding: 0;
+                            left: auto;
+                            right: auto;
+                            max-width: 60%;
+                        }
                     }
                 }
             }
 
-            h1 {
-                max-width: 60rem;
+            .center {
                 text-align: center;
                 word-break: break-word;
-                margin: 1em auto 0 auto;
+            }
+
+            .subject {
+                @extend .center;
+                text-align: center;
+                word-break: break-word;
+                margin: 2em auto 0 auto;
                 font-size: 2rem;
                 font-weight: 300;
             }
-            
+
             .date {
                 margin: 0 auto;
                 font-size: 0.8rem;
                 text-align: center;
                 color: rgb(145, 145, 145);
+                margin: 2em auto;
             }
-            
-            img {
-                width: 100%;
-            }
-            
-
 
             blockquote {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 color: rgb(116, 116, 116);
-                margin: 3rem auto;
+                margin: 4rem auto;
                 padding: 0 1rem;
                 text-align: center;
             }
     
-            
+         
+            table {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                font-family: sans-serif;
+                -webkit-font-smoothing: antialiased;
+                max-width: 40em;
+                text-align: center;
+
+                th {
+                    background-color: rgb(105, 105, 105);
+                    color: white;
+                    font-weight: normal;
+                    padding: 0.4rem 1rem;
+                    text-align: center;
+                  }
+                  td {
+                    background-color: rgb(238, 238, 238);
+                    color: rgb(111, 111, 111);
+                    padding: 0.4rem 1rem;
+                  }
+              }
         }
         
     }
