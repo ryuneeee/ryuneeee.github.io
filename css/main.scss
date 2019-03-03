@@ -25,7 +25,7 @@ body {
     font-family: $base-font-family;
     -ms-overflow-style: none;
     overflow: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 
     a {
         color: #000;
@@ -203,7 +203,7 @@ body {
                     padding-left: 0;
                     padding-right: 0;
                     max-width: 70%;
-                    @media (max-width: 800px) {
+                    @media (max-width: 1200px) {
                         max-width: 100%;
                     }
                 }
