@@ -19,7 +19,9 @@ date:   2019-03-04 08:30:00 +0900
 {: class="wide"}
 
 ![](https://farm8.staticflickr.com/7880/47272692541_b9243d2823_o.jpg)
+
 ![](https://farm8.staticflickr.com/7829/33396970238_6ae2b3d2fa_o.jpg)
+{: class="wide"}
 
 ![](https://farm8.staticflickr.com/7838/47272691961_58e3f3777d_h.jpg)
 {: class="full"}
